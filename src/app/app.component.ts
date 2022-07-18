@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FavouriteChangeEventArgs } from './exercise041/exercise041.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'johapp';
+   movie: string | undefined;
+   post={
+    title:"Title",
+    isFavourite:true
+   }
+   onFavouriteChange(eventArgs: FavouriteChangeEventArgs){
+     console.log("favourite changed: ", eventArgs)
+   }
 }
+ 
