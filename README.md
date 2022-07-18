@@ -1,1 +1,1 @@
-# Gitproject
+# Angular retail shop App
